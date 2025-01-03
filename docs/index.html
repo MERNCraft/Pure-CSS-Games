@@ -3111,7 +3111,7 @@ is a label containing an unchecked radio button followed by another
 label containing an unchecked radio button, hide the second label.”</p>
 <p>You’ll need to use a sibling combinator, like <code>~</code> or
 <code>+</code> to select the second label.</p>
-<details class="solution" open>
+<details class="solution">
 <summary>
 Solution
 </summary>
@@ -3421,6 +3421,8 @@ opposite directions?</strong></p>
 <a href="#two-winged-labels">A Label with Two Wings</a>
 </h2>
 <details class="tip" open>
+<p>The task now is to create buttons Plus and Minus buttons that allow
+you to cycle through all the numbers.</p>
 <summary>
 Keeping it small
 </summary>
@@ -3434,6 +3436,12 @@ much easier to think in new ways.</p>
 </details>
 <p>So. New problem. New HTML and CSS files. You know the drill. “Plus
 and Minus” might be a good name for your project folder.</p>
+<h2 id="preview">Preview</h2>
+<p>Here’s how the page you are about to create should work, but you can
+just create a proof-of-concept which doesn’t have all the pretty
+styling.</p>
+<iframe id="iframe-plus-and-minus" title="Plus and Minus" width="300" height="150" src="https://merncraft.github.io/plus-and-minus">
+</iframe>
 <p>Here’s some HTML to get you started.</p>
 <pre class="language-html line-numbers"><code class="language-html line-numbers">  &lt;label class="d0"&gt;
     &lt;span class="minus"&gt;–&lt;/span&gt;
@@ -3457,7 +3465,9 @@ and Minus” might be a good name for your project folder.</p>
 Reading the code
 </summary>
 <p>Take a good look at it and see if you can make sense of all the
-labels, inputs and spans. Why does each label have two spans?</p>
+labels, inputs and spans. Why does each label have two spans? Can you
+see how this will generate something that looks a little like the
+Preview above?</p>
 </details>
 <h2 id="heres-how-the-html-looks-in-a-browser.">Here’s how the HTML
 looks in a browser.</h2>
@@ -3547,7 +3557,8 @@ span {
 <p>This would work. It would definitely work. But there’s a problem.</p>
 <p>CSS won’t let you <em>read</em> the value of a <code>counter</code>,
 except to display it in a <code>::before</code> or <code>::after</code>
-element.</p>
+element. So if you want to use the value in actual calculations, you’ll
+need to think of something else.</p>
 <details class="question" open>
 <summary>
 A different solution?
@@ -3596,7 +3607,9 @@ browsers to make this possible. ( See “EXAMPLE 7”)</p>
 <h2 id="the-trick">The trick</h2>
 <p>You can’t <em>show</em> the value of a custom property directly, but
 if it is a number, then you can use it with <code>counter-set</code>,
-and then get a <em><code>counter</code></em> to display it for you.</p>
+and then get a <em><code>counter</code></em> to display it for you. You
+can’t read the value of a <code>counter</code>, but you can read the
+value of a custom property. Win-win.</p>
 </section>
 <!-- Repeating a Pattern -->
 <section id="repeating-a-pattern" aria-labelledby="repeating-a-pattern" data-item="Repeating a Pattern">
@@ -4107,7 +4120,7 @@ browsers as you go, so that you do not create something that only works
 in one browser when the stars are correctly aligned.</p>
 <details class="feedback" open>
 <summary>
-Tell me about your creations
+Tell me about your own creations
 </summary>
 <p>I’m hoping that you will be inspired to create some CSS-only
 activities of your own. If you do, please <a

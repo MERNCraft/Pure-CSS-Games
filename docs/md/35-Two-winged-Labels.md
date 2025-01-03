@@ -7,6 +7,9 @@
   <h2><a href="#two-winged-labels">A Label with Two Wings</a></h2>
 
 <details class="tip" open>
+
+The task now is to create buttons Plus and Minus buttons that allow you to cycle through all the numbers. 
+
 <summary>Keeping it small</summary>
 Whenever I am working in a big project and I come across a new problem, I create a new baby project to test my ideas and make all the mistakes I need to find a solution to this new problem. When I finally understand what I am doing, then I go back to the big project and apply my new solution.
 
@@ -15,6 +18,19 @@ Treating a new problem in isolation frees up your mind and makes it much easier 
 </details>
 
 So. New problem. New HTML and CSS files. You know the drill. "Plus and Minus" might be a good name for your project folder.
+
+## Preview
+
+Here's how the page you are about to create should work, but you can just create a proof-of-concept which doesn't have all the pretty styling.
+
+<iframe
+  id="iframe-plus-and-minus"
+  title="Plus and Minus"
+  width="300"
+  height="150"
+  src="https://merncraft.github.io/plus-and-minus">
+</iframe>
+
 
 Here's some HTML to get you started.
 
@@ -40,7 +56,7 @@ Here's some HTML to get you started.
 
 <details class="question" open>
 <summary>Reading the code</summary>
-Take a good look at it and see if you can make sense of all the labels, inputs and spans. Why does each label have two spans?
+Take a good look at it and see if you can make sense of all the labels, inputs and spans. Why does each label have two spans? Can you see how this will generate something that looks a little like the Preview above?
 
 </details>
 
@@ -125,7 +141,7 @@ span {
 ```
 This would work. It would definitely work. But there's a problem.
 
-CSS won't let you _read_ the value of a `counter`, except to display it in a `::before` or `::after` element.
+CSS won't let you _read_ the value of a `counter`, except to display it in a `::before` or `::after` element. So if you want to use the value in actual calculations, you'll need to think of something else.
 
 <details class="question" open>
 <summary>A different solution?</summary>
@@ -172,6 +188,6 @@ And if you are _really_ sneaky, you can even store JavaScript code inside a cust
 
 ## The trick
 
-You can't _show_ the value of a custom property directly, but if it is a number, then you can use it with `counter-set`, and then get a _`counter`_ to display it for you.
+You can't _show_ the value of a custom property directly, but if it is a number, then you can use it with `counter-set`, and then get a _`counter`_ to display it for you. You can't read the value of a `counter`, but you can read the value of a custom property. Win-win.
 
 </section>

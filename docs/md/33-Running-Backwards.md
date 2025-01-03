@@ -173,7 +173,7 @@ However, both buttons both appear when the page is first loaded, when neither of
 
 You'll need to use a sibling combinator, like `~` or `+` to select the second label.
 
-<details class="solution" open>
+<details class="solution">
 <summary>Solution</summary>
 Here's my solution. Can you adapt this to work with your version?
 ```css-w

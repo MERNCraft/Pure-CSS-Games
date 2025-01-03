@@ -27,7 +27,7 @@ More importantly, I hope that you have picked up some ideas on how to explore a 
 I've suggested that you have fun making mistakes and testing unorthodox approaches. Be sure, though, to test in all the major browsers as you go, so that you do not create something that only works in one browser when the stars are correctly aligned. 
   
 <details class="feedback" open>
-<summary>Tell me about your creations</summary>
+<summary>Tell me about your own creations</summary>
 I'm hoping that you will be inspired to create some CSS-only activities of your own. If you do, please [send me a link to your creations](https://github.com/MERNCraft/Pure-CSS-Games/issues/new), so that I can learn from you. 
 
 </details>
