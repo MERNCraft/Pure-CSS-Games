@@ -9,7 +9,7 @@
 You want to be able to cycle through the numbers `0` to `9`, but for now, you can only show the number `1` (if the right radio button is checked). You need more labels with spans and radio buttons in your HTML page.
 
 <details class="note" open>
-<summary>Solution</summary>
+<summary>Apply the pattern</summary>
 For brevity, I'm not going to list them all. You should be able to see the pattern and the missing labels.
 
 </details>

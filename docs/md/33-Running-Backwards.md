@@ -135,9 +135,9 @@ Hint: How many radio buttons are there? What position has each been given? Do yo
 
 If you click on the Good button, once again the display jumps back immediately to showing `Hi`. 
 
-<details class="question" open>
+<details class="hint" open>
 <summary>Just a hint</summary>
-And the _frontmost_ radio button beside Well appears checked. Does that help you answer the previous question?
+Did you notice that the _frontmost_ radio button beside Well appears checked. Does that help you answer the previous question?
 
 </details>
 

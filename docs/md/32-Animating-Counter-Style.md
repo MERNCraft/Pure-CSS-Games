@@ -40,7 +40,7 @@ As a clue, here's how your page will will look like after the animation (but you
 
 Do your best with creating the "Well Hi! page! You can compare your version with mine later, and see if yours was in fact more elegant : )
 
-<details class="solution">
+<details class="hint">
 <summary>Hints</summary>
 Here are some things to think about:
 
